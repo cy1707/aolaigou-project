@@ -1,0 +1,29 @@
+.goodslist .hot_goods { padding-top: 20px; color: #333; border-top: 1px solid #ccc; }
+
+.goodslist .hot_goods .hot_goodsbox { width: 1200px; height: 150px; margin: 0 auto; border: 1px solid #e6e6e6; overflow: hidden; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_l { float: left; width: 40px; height: 150px; background: #fafafa; border-right: 1px solid #e6e6e6; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_l li { text-align: center; font-size: 14px; font-weight: bold; color: #666; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li { float: left; margin-top: 10px; margin-left: 15px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsimg { width: 130px; height: 130px; border: 1px solid #eaeaea; float: left; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsimg img { width: 130px; height: 130px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsfont { width: 130px; float: left; height: 130px; margin-left: 10px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsfont .hot_goodsfont_t { height: 60px; overflow: hidden; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsfont .hot_goodsfont_t a { color: #333; font-size: 12px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsfont .hot_goodsfont_t a:hover { color: red; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsprice { height: 30px; line-height: 30px; color: #ff3243; font-size: 12px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsbtn a { width: 80px; height: 30px; display: block; line-height: 30px; background: #e6e6e6; text-align: center; color: #656565; margin-top: 10px; font-size: 12px; }
+
+.goodslist .hot_goods .hot_goodsbox .hot_goods_r li .hot_goodsbtn a:hover { color: red; }
+
+.goodslist .serach_list { width: 1202px; margin: 0 auto; margin-top: 20px; overflow: hidden; }

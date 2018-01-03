@@ -3,8 +3,16 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../css/shopNBC.css" />
+        <script src="../lib/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $('#pageHeader').load('header.html')
+                $('#pageFooter').load('footer.html')
+            })
+        </script>
     </head>
     <body>
+        <header id="pageHeader"></header>
         <main class="offnetShopes">
             <div class="shopes">
                 <img src="../img/sz_shop.jpg"/>
@@ -175,5 +183,6 @@
                 </div>
             </div>
         </main>
+        <footer id="pageFooter"></footer>
     </body>
 </html>
