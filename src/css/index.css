@@ -1,0 +1,148 @@
+@charset "UTF-8";
+.head { width: 1280px; background: #f0f0f0; }
+
+.head .head_l { color: #999; display: block; width: 220px; }
+
+.head .head_l li { text-align: center; font-size: 15px; line-height: 46px; height: 46px; float: left; margin-left: 20px; }
+
+.head .head_l li:nth-child(1):hover .top-tips { display: block; }
+
+.head .head_l .tips-box { position: absolute; z-index: 100; left: 0; top: 42px; }
+
+.head .head_l .tips-box .top-tips { width: 150px; display: block; background: #fff; border: 1px solid #dadada; box-shadow: 0 1px 3px #999; display: none; }
+
+.head .head_l .tips-box .top-tips li { display: block; background: #fff; text-align: center; width: 100%; border-bottom: 1px solid #F6F6F6; line-height: 40px; height: 40px; margin: auto; font-size: 14px; }
+
+.head .head_r { color: #999; display: block; width: 700px; }
+
+.head .head_r li { float: left; display: inline-block; line-height: 46px; height: 46px; color: #999; font-size: 15px; font-family: "微软雅黑"; margin-left: 25px; }
+
+.head .head_r li:nth-child(7) { margin-right: 25px; }
+
+.head .head_r .num { margin-left: 5px; color: #C81417; font-weight: bolder; }
+
+.logo { height: 96px; width: 100%; padding-top: 30px; box-sizing: border-box; }
+
+.logo .logo_l img { vertical-align: top; width: 192px; margin-left: 49px; }
+
+.logo .logo_r { margin-left: 144px; position: relative; }
+
+.logo .logo_r input { width: 368px; line-height: 37px; height: 36px; border: 1px solid #C81417; padding-left: 10px; margin-top: 1px; margin-left: 2px; outline: 0; color: #808080; font-size: 16px; border-radius: 5px 0 0 5px; }
+
+.logo .logo_r .ss-btn { font-family: "微软雅黑"; font-size: 22px; color: #fff; background: #C81417; width: 90px; border: none; cursor: pointer; height: 38px; line-height: 38px; border-radius: 0 5px 5px 0; position: absolute; left: 382px; top: 1px; }
+
+.links { width: 1280px; }
+
+.links ul { margin-left: 367px; }
+
+.links ul li { float: left; display: block; line-height: 45px; height: 45px; padding: 0 88px 0 17px; font-size: 22px; font-family: "微软雅黑"; }
+
+.links ul li a { color: #333; font-family: "微软雅黑"; font-size: 20px; font-weight: 600; }
+
+.links ul li a:hover { color: #C81417; }
+
+.links ul li:nth-child(1) a { color: #C81417; }
+
+.banner { height: 450px; width: 1280px; position: relative; overflow: hidden; }
+
+.banner ul { position: absolute; overflow: hidden; }
+
+.banner ul li { float: left; }
+
+.banner ul li img { height: 450px; width: 1280px; }
+
+.banner .page { position: absolute; right: 600px; bottom: 0; padding: 10px; }
+
+.banner .page span { display: inline-block; margin: 0 5px; width: 30px; height: 30px; line-height: 30px; background-color: rgba(0, 0, 0, 0.6); text-align: center; color: #fff; border-radius: 50%; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+.banner .page .active { background-color: rgba(255, 0, 0, 0.8); }
+
+.main a { width: 1280px; display: block; }
+
+.main a img { width: 100%; height: 500px; }
+
+.foot { font-family: "微软雅黑"; width: 1280px; }
+
+.foot .nothing { padding-top: 30px; background: #EAEAEA; }
+
+.foot .foot_t { border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+
+.foot .foot_t ul li { float: left; width: 240px; height: 112px; margin-top: 5px; display: inline-block; position: relative; box-sizing: border-box; }
+
+.foot .foot_t ul li .font-long-icon { position: absolute; top: 20px; left: 10px; width: 62px; height: 62px; background-position: -270px -105px; font-size: 60px; color: #C81417; }
+
+.foot .foot_t ul li div { display: inline-block; }
+
+.foot .foot_t ul li .describe { position: absolute; top: 20px; left: 85px; }
+
+.foot .foot_t ul li .describe .des_1 { font-size: 18px; color: #d61518; line-height: 40px; height: 40px; }
+
+.foot .foot_t ul li .describe .des_2 { font-size: 12px; color: #333; }
+
+.foot .foot-help { height: 200px; margin-top: 30px; border-bottom: 1px solid #ccc; }
+
+.foot .foot-help .help_wx { position: relative; width: 180px; height: 146px; }
+
+.foot .foot-help .help_wx .help_weibo, .foot .foot-help .help_wx .help_weixin { display: inline-block; width: 50px; position: absolute; top: 0; left: 0; }
+
+.foot .foot-help .help_wx .help_weibo .icon-weibo, .foot .foot-help .help_wx .help_weibo .icon-weixin-copy, .foot .foot-help .help_wx .help_weixin .icon-weibo, .foot .foot-help .help_wx .help_weixin .icon-weixin-copy { background-position: 0 -105px; width: 42px; height: 43px; font-size: 40px; padding: 0 0 2px 5px; color: pink; }
+
+.foot .foot-help .help_wx .help_weibo span, .foot .foot-help .help_wx .help_weixin span { color: #666; font-size: 12px; width: 100%; text-align: center; display: block; margin-top: 5px; }
+
+.foot .foot-help .help_wx .help_weixin { margin-left: 120px; }
+
+.foot .foot-help .help_wx .contact { padding-top: 72px; }
+
+.foot .foot-help .help_wx .contact p:nth-child(1) { width: 180px; height: 26px; line-height: 20px; color: #666; font-size: 12px; }
+
+.foot .foot-help .help_wx .contact p:nth-child(2) { width: 146px; height: 20px; line-height: 20px; color: #666; font-size: 12px; padding-left: 63px; }
+
+.foot .foot-help .help_wx .contact p:nth-child(3) { font-size: 12px; line-height: 20px; height: 20px; width: 100%; color: #666; }
+
+.foot .foot-help .foot-split { height: 170px; width: 1px; overflow: hidden; background: #EDEDED; float: left; display: inline-block; margin-left: 55px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.foot .foot-help .help_guide, .foot .foot-help .help_pay, .foot .foot-help .help_delivery, .foot .foot-help .help_afterSelf { margin-left: 55px; display: inline-block; box-sizing: border-box; }
+
+.foot .foot-help .help_guide li:nth-child(1), .foot .foot-help .help_pay li:nth-child(1), .foot .foot-help .help_delivery li:nth-child(1), .foot .foot-help .help_afterSelf li:nth-child(1) { color: #333; font-size: 14px; line-height: 35px; margin-top: -10px; }
+
+.foot .foot-help .help_guide li:hover a, .foot .foot-help .help_pay li:hover a, .foot .foot-help .help_delivery li:hover a, .foot .foot-help .help_afterSelf li:hover a { color: #C81417; }
+
+.foot .foot-help .help_guide a, .foot .foot-help .help_pay a, .foot .foot-help .help_delivery a, .foot .foot-help .help_afterSelf a { color: #666; line-height: 25px; font-size: 12px; }
+
+.foot .foot-help .help_code { margin-left: 40px; box-sizing: border-box; margin-top: -23px; }
+
+.foot .foot_b { width: 100%; height: 186px; }
+
+.foot .foot_b .foot_link { width: 540px; margin: 0 auto; margin-top: 25px; text-align: center; overflow: hidden; }
+
+.foot .foot_b .foot_link li { float: left; margin-left: 10px; color: #666; }
+
+.foot .foot_b .foot_link li a { font-size: 12px; }
+
+.foot .foot_b .foot_copy { width: 540px; margin: 0 auto; margin-top: 12px; text-align: center; overflow: hidden; color: #666; }
+
+.foot .foot_b .foot_copy p { font-size: 12px; line-height: 26px; height: 26px; }
+
+.foot .foot_b .foot_copy a img { width: 20px; height: 20px; }
+
+.foot .foot_b .foot_copy a span { display: inline-block; font-size: 12px; height: 26px; line-height: 26px; margin: 0px 0px 0px 5px; color: #666; }
+
+.foot .foot_b .foot_approve { width: 1040px; margin-top: 25px; margin-left: 95px; }
+
+.foot .foot_b .foot_approve li { width: 87px; height: 35px; float: left; margin-left: 10px; }
+
+.foot .foot_b .foot_approve li img { width: 87px; height: 35px; }
+
+.foot .foot_b .foot_approve li:nth-child(10) a { display: inline-block; color: #333; font-size: 12px; font-weight: bold; }
+
+.right_fix { width: 385px; height: 600px; position: fixed; right: -337px; bottom: 20px; z-index: 9999; }
+
+.right_fix ul { float: left; display: inline-block; }
+
+.right_fix ul li { width: 50px; height: 50px; background: #fff; border-bottom-left-radius: 10px; display: block; margin-bottom: 2px; border: 1px solid #F0F0F0; position: relative; border-right: none; margin-left: 1px; cursor: pointer; box-sizing: border-box; border-top-left-radius: 10px; }
+
+.right_fix ul li .wenzi { position: relative; width: 50px; line-height: 50px; height: 50px; border-bottom-left-radius: 10px; background: #fff; color: #000; display: block; border: 1px solid #F0F0F0; border-right: none; text-align: center; box-sizing: border-box; border-top-left-radius: 10px; font-size: 12px; }
+
+.right_fix ul li .right-cont { position: absolute; top: 0; right: 0; background: #fff; display: block; width: 100%; height: 100%; border-radius: 10px; }
+
+.right_fix ul li .right-cont i { width: 20px; height: 20px; display: block; position: absolute; top: 15px; left: 15px; font-size: 20px; }

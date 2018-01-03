@@ -1,0 +1,51 @@
+.register_head { height: 120px; width: 1200px; margin: 0 auto; }
+
+.register_head .register_logo { margin-top: 35px; }
+
+.register_head .register_logo img { width: 192px; height: 74px; }
+
+.register_head .register_hr { height: 112px; }
+
+.register_head .register_hr li { float: left; width: 240px; height: 100%; margin-top: 5px; display: inline-block; position: relative; box-sizing: border-box; }
+
+.register_head .register_hr li .font-long-icon { position: absolute; top: 20px; left: 10px; width: 62px; height: 62px; background-position: -270px -105px; color: red; font-size: 66px; }
+
+.register_head .register_hr li .describe { position: absolute; top: 20px; left: 85px; }
+
+.register_head .register_hr li .describe .des_1 { font-size: 18px; color: #d61518; line-height: 40px; height: 40px; }
+
+.register_head .register_hr li .describe .des_2 { font-size: 12px; color: #333; }
+
+.register_main { height: 557px; width: 1200px; margin: 0 auto; }
+
+.register_main .bigImg { width: 673px; height: 558px; overflow: hidden; }
+
+.register_main .register_in { width: 350px; border: 1px solid #d0d0d0; margin-top: 30px; background: #fff; }
+
+.register_main .register_in .register_int { background: #f5f5f5; height: 50px; border-bottom: 1px solid #f0f0f0; line-height: 50px; overflow: hidden; }
+
+.register_main .register_in .register_int .fl { color: #666; margin-left: 20px; font-size: 13px; display: inline-block; }
+
+.register_main .register_in .register_int .fr { margin-right: 15px; font-size: 13px; display: inline-block; }
+
+.register_main .register_in .register_int .fr a { color: #ff7800; }
+
+.register_main .register_in .register_inb { width: 300px; margin: 0 auto; overflow: hidden; padding-top: 20px; padding-bottom: 20px; }
+
+.register_main .register_in .register_inb .form_ele { overflow: hidden; height: 37px; }
+
+.register_main .register_in .register_inb .form_ele label { width: 55px; text-align: left; color: #666; height: 35px; font-size: 12px; }
+
+.register_main .register_in .register_inb .form_ele input { width: 170px; background-color: #fcfcfc; height: 34px; border: 1px solid #e6e6e6; padding-right: 45px; color: #666; padding-left: 10px; line-height: 35px; border-radius: 5px; outline: 0; }
+
+.register_main .register_in .register_inb .hint { height: 30px; width: 300px; }
+
+.register_main .register_in .register_inb .registerBtn { width: 265px; height: 40px; display: block; text-align: center; line-height: 40px; font-weight: 700; font-size: 14px; margin: auto; margin-top: 5px; border-radius: 5px; background: #C81417; }
+
+.register_main .register_in .register_inb .registerBtn:hover { background: #e92629; }
+
+.register_main .register_in .register_inb .protocol { padding-top: 10px; }
+
+.register_main .register_in .register_inb .protocol a { color: #666; font-size: 12px; }
+
+.register_main .register_in .register_inb .protocol a:hover { color: red; }

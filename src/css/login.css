@@ -1,0 +1,37 @@
+.login_mr { width: 340px; height: auto; background: #fff; border: 1px solid #d0d0d0; margin-top: 75px; position: relative; }
+
+.login_mr .register-btn { position: absolute; top: 15px; left: 20px; z-index: 1; font-size: 13px; }
+
+.login_mr .register-btn a { color: #FF7800; }
+
+.login_mr .login_mrb { position: relative; }
+
+.login_mr .login_mrb form { width: 240px; margin: auto; display: block; }
+
+.login_mr .login_mrb form .username_box { margin-top: 50px; }
+
+.login_mr .login_mrb form .username_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
+
+.login_mr .login_mrb form .username_box .error { height: 30px; }
+
+.login_mr .login_mrb form .password_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
+
+.login_mr .login_mrb form .password_box .error { height: 30px; }
+
+.login_mr .login_mrb form .rember_pw .keep_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; }
+
+.login_mr .login_mrb form .rember_pw .keep_pw label { margin-left: 10px; vertical-align: middle; color: #a7a7a7; font-size: 12px; }
+
+.login_mr .login_mrb form .rember_pw .forget_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; font-size: 12px; text-align: right; }
+
+.login_mr .login_mrb form .loginBtn { margin-top: 20px; width: 100%; padding: 14px 0; background: #C81417; color: #FFF; border-radius: 5px; text-align: center; display: block; border: none; cursor: pointer; }
+
+.login_mr .login_mrb .reg_free { text-align: center; margin-top: 20px; color: #a7a7a7; font-size: 14px; }
+
+.login_mr .login_mrb .other_login { width: 50%; margin: auto; margin-top: 10px; }
+
+.login_mr .login_mrb .other_login li { width: 50%; float: left; display: inline-block; }
+
+.login_mr .login_mrb .other_login li i { width: 30px; height: 30px; margin: auto; background-position: 0 -180px; font-size: 36px; padding-left: 24px; }
+
+.login_mr .login_mrb .other_login li p { width: 100%; text-align: center; color: #a7a7a7; display: block; line-height: 25px; height: 25px; font-size: 14px; }

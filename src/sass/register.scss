@@ -1,0 +1,44 @@
+.register_head{height: 120px;width: 1200px;margin:0 auto;
+    .register_logo{margin-top: 35px;
+        img{width: 192px;height: 74px;}
+    }
+    .register_hr{height: 112px;
+        li{float:left;width: 240px;height: 100%;margin-top: 5px;display: inline-block;position: relative;box-sizing: border-box;
+            .font-long-icon{position: absolute;top: 20px;left: 10px;width: 62px;
+    height: 62px;background-position: -270px -105px;color:red;font-size: 66px;}
+            .describe{position: absolute;top: 20px;left: 85px;
+                    .des_1{font-size: 18px;color: #d61518;line-height: 40px;height: 40px;}
+                    .des_2{font-size: 12px;color: #333;}
+            }
+        }
+    }
+}
+.register_main{height: 557px;width: 1200px;margin:0 auto;
+    .bigImg{width: 673px;height: 558px;overflow: hidden;}
+    .register_in{width: 350px;border: 1px solid #d0d0d0;margin-top: 30px;background: #fff;
+        .register_int{background: #f5f5f5;height: 50px;border-bottom: 1px solid #f0f0f0;line-height: 50px;overflow: hidden;
+            .fl{color: #666;margin-left: 20px;font-size: 13px;display:inline-block;}
+            .fr{margin-right: 15px;font-size: 13px;display:inline-block;
+                a{color: #ff7800;}
+            }
+        }
+        .register_inb{width: 300px;margin: 0 auto;overflow: hidden;padding-top: 20px;padding-bottom: 20px;
+            .form_ele{overflow: hidden;height: 37px;    
+                label{width: 55px;text-align: left;color: #666;height: 35px;font-size: 12px;}
+                input{width: 170px;background-color: #fcfcfc;height: 34px;border: 1px solid #e6e6e6;padding-right: 45px;color: #666;padding-left: 10px;line-height: 35px;border-radius: 5px;outline: 0;}
+
+            }
+            .hint{height: 30px;width: 300px;}
+            .registerBtn{width: 265px;height: 40px;display: block;text-align: center;line-height: 40px;font-weight: 700;font-size: 14px;margin: auto;margin-top: 5px;    border-radius: 5px;background: #C81417;}
+            .registerBtn:hover{background: #e92629;}
+            .protocol{padding-top:10px;
+                    a{color: #666;font-size: 12px;}
+                    a:hover{color:red;}
+            }
+
+        }
+
+    }
+
+
+}
