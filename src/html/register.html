@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="../css/register.css" />
         <link rel="stylesheet" href="../css/index.css"/>
         <link rel="stylesheet" href="../css/font-top/iconfont.css" />
+        <script src="../lib/jquery-3.2.1.js"></script>
+        <script src="../js/common.js"></script>
         <style type="text/css">
             @font-face {font-family: "font-foot";
               src: url('css/font-top/iconfont.eot?t=1514876477195'); /* IE9*/
@@ -62,7 +64,7 @@
             <div class="register_in fr">
                 <div class="register_int">
                     <span class="fl">注册华盛奥莱会员</span>
-                    <span class="fr"><a href="file:///C:/Users/Administrator/Desktop/aolaigou/src/html/login.html">已有账户，登录</a></span>
+                    <span class="fr"><a href="./login.html">已有账户，登录</a></span>
                 </div>
                 <div class="register_inb">
                     <div class="form_ele">
@@ -74,22 +76,23 @@
                         <label for="password">输入密码</label>
                         <input type="text" name="password" id="password" placeholder="请输入密码"/>
                     </div>
-                    <div class="userName_club hint"></div>
+                    <div class="password_club hint"></div>
                     <div class="form_ele">
                         <label for="repassword">确认密码</label>
                         <input type="text" name="repassword" id="repassword" placeholder="请输入密码"/>
                     </div>
-                    <div class="userName_club hint"></div>
+                    <div class="repassword_club hint"></div>
                     <div class="form_ele">
                         <label for="yzcode">验证码</label>
-                        <input type="text" name="yzcode" id="yzcode" style="margin-left:14px;" placeholder="请输入验证码"/>
+                        <input type="text" name="yzcode" id="yzcode" style="margin-left:14px;width: 100px;" placeholder="请输入验证码" style="width: 100px;"/>
+                        <span class="showcode" style="display: inline-block;width: 70px;height: 33px;background:#ccc;color:#000;vertical-align:middle;text-align:center;line-height: 33px;"></span>
                     </div>
-                    <div class="userName_club hint"></div>
+                    <div class="yzcode_club hint"></div>
                     <div class="form_ele">
                         <label for="smsyz">短信验证</label>
                         <input type="text" name="smsyz" id="smsyz" placeholder="请输入验证码"/>
                     </div>
-                    <div class="userName_club hint"></div>
+                    <div class="smsyz_club hint"></div>
                     <button class="registerBtn">注册</button>
                     <div class="protocol fr">
                         <input type="checkbox" checked="checked"/>
@@ -181,6 +184,6 @@
                 </div>
             </div>
         </div>
-        
+        <script src="../js/register.js"></script>
     </body>
 </html>

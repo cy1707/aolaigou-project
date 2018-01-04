@@ -38,7 +38,11 @@
 
 .register_main .register_in .register_inb .form_ele input { width: 170px; background-color: #fcfcfc; height: 34px; border: 1px solid #e6e6e6; padding-right: 45px; color: #666; padding-left: 10px; line-height: 35px; border-radius: 5px; outline: 0; }
 
-.register_main .register_in .register_inb .hint { height: 30px; width: 300px; }
+.register_main .register_in .register_inb .hint { height: 30px; width: 300px; text-align: center; line-height: 30; margin-left: 30px; }
+
+.register_main .register_in .register_inb .success { height: 30px; width: 300px; line-height: 30px; margin-left: 54px; color: green; font-size: 14px; }
+
+.register_main .register_in .register_inb .error { height: 30px; width: 300px; line-height: 30px; margin-left: 54px; color: red; font-size: 14px; }
 
 .register_main .register_in .register_inb .registerBtn { width: 265px; height: 40px; display: block; text-align: center; line-height: 40px; font-weight: 700; font-size: 14px; margin: auto; margin-top: 5px; border-radius: 5px; background: #C81417; }
 

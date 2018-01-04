@@ -9,6 +9,7 @@
             $(function(){
                 $('#pageHeader').load('header.html')
                 $('#pageFooter').load('footer.html')
+                $('#right_fixed').load('fixed.html')
             })
         </script>
     </head>
@@ -96,27 +97,247 @@
                 </div>
             </div>
             <div class="goodslist_all">
-                <div class="serach_list">
-                    <div class="seach_result">
-                        <div class="seach_result_l">
-                            <span>
-                                <a href="#">
-                                    <strong>全部结果 〉 (男士运动服)</strong>
-                                </a>
-                            </span>
-                        </div>
-                        <div class="seach_result_r">
-                            <div class="serch_result_mune">
-                                <div class="mune_l">
-                                    <a href=""></a>
+                <div class="goodslist_all_t">
+                    <div class="goods_all_tt">
+                        <div class="goods_all_tt1">
+                            <div class="goods_all_tt1l">
+                                <span>
+                                    <a href="#">全部结果 〉 (男士运动服)</a>
+                                </span>
+                            </div>
+                            <div class="goods_all_tt1r">
+                                <div>
+                                    <a href="#">所有类目</a>
                                 </div>
-                                <div class="mune_r"> 〉</div>
                             </div>
                         </div>
+                        <div class="goods_all_tt2">
+                            <div class="goods_all_tt2l">
+                                品牌:
+                            </div>
+                            <ul>
+                                <li><a href="#">adidas阿迪达斯</a></li>
+                                <li><a href="#">PUMA/彪马</a></li>
+                                <li><a href="#">耐克NIKE</a></li>
+                                <li><a href="#">龙狮戴尔</a></li>
+                                <li><a href="#">361度</a></li>
+                                <li><a href="#">361°</a></li>
+                                <li><a href="#">PRO TOUCH</a></li>
+                                <li><a href="#">adidas/阿迪达斯</a></li>
+                                <li><a href="#">贵人鸟</a></li>
+                                <li><a href="#">Xtep特步</a></li>
+                                <li><a href="#">德尔惠</a></li>
+                                <li><a href="#">ANTA安踏</a></li>
+                                <li><a href="#">彪马</a></li>
+                                <li><a href="#">安踏</a></li>
+                            </ul>
+                            <div class="more_btn">
+                                <span>更多</span>
+                                <span>+ 多选</span>
+                            </div>    
+                        </div>
+                        <div class="goods_all_tt2">
+                            <div class="goods_all_tt2l">
+                                价格:
+                            </div>
+                            <ul style="width: 625px;">
+                                <li><a href="#">0-50元</a></li>
+                                <li><a href="#">50-150元</a></li>
+                                <li><a href="#">150-300元</a></li>
+                                <li><a href="#">300-500元</a></li>
+                                <li><a href="#">500-800元</a></li>
+                                <li><a href="#">800-1500元</a></li>
+                                <li><a href="#">1500元以上</a></li>
+                            </ul>
+                            <div class="range_btn">
+                                <span>
+                                    <input type="text"/>
+                                </span>
+                                <span>-</span>
+                                <span>
+                                    <input type="text" />
+                                </span>
+                                <span>
+                                    <a>确定</a>
+                                </span>
+                            </div>    
+                        </div>
+                        <div class="goods_all_tt2">
+                            <div class="goods_all_tt2l">
+                                版型:
+                            </div>
+                            <ul>
+                                <li><a href="#">常规</a></li>
+                                <li><a href="#">直筒</a></li>
+                            </ul>
+                            <div class="more_btn">
+                                <span>更多</span>
+                                <span>+ 多选</span>
+                            </div>    
+                        </div>
+                        <div class="goods_all_tt2">
+                            <div class="goods_all_tt2l">
+                                袖长:
+                            </div>
+                            <ul>
+                                <li><a href="#">短袖</a></li>
+                                <li><a href="#">无袖</a></li>
+                                <li><a href="#">长袖</a></li>
+                            </ul>
+                            <div class="more_btn">
+                                <span>更多</span>
+                                <span>+ 多选</span>
+                            </div>    
+                        </div>
+                    </div>   
+                </div>
+                <!-- 商品 -->
+                <div class="goodslist_all_c clearfix">
+                    <div class="goodslist_all_cl">
+                        <!-- 左边热门 -->
+                        <div class="goodslist_all_clt">
+                            <div class="goodslist_all_cllt">
+                                热门销售
+                                <em>HOT</em>
+                            </div>
+                            <div class="goodslist_all_cllb">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_hotlist1.JPG"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">尤嘉（U-UP）  男式保暖超轻羽绒服 YRM013</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥344</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_hotlist2.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">Xtep特步  男式时尚潮流百搭休闲运动T恤 985229011196</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥63.2</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_hotlist3.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">[支持自提] PUMA/彪马  男式基本系列短袖T恤 51243910</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥129</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_hotlist4.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas/阿迪达斯  陈奕迅同款经典防风连帽外套 AP9771</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥399</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_hotlist5.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">特步  女式舒适针织长裤 984129350262</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥155</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 左边新品 -->
+                        <div class="goodslist_all_clb" style="margin-top:20px;">
+                            <div class="goodslist_all_cllt">
+                                新上商品
+                                <em>NEWS</em>
+                            </div>
+                            <div class="goodslist_all_cllb">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_news1.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas阿迪达斯  2018新款 男子运动休闲圆领针织舒适透气卫衣套头衫CX4949 </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥319</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_news2.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas阿迪达斯  2018新款 男子运动休闲舒适透气修身收腿小脚针织长裤CV9327</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥239</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_news3.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas阿迪达斯  2018新款 男子跑步运动休闲收口保暖小脚针织长裤CV9326</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥239</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_news4.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas阿迪达斯  2018新款 男子运动休闲训练跑步圆领舒适透气短袖T恤CV9315</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥109</li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../img/goodslist_news5.jpg"/>
+                                        </a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_font">
+                                        <a href="#">adidas阿迪达斯  2018新款 男子针织运动休闲训练跑步宽松大码连帽夹克外套CV9313</a>
+                                    </li>
+                                    <li class="goodslist_all_cllb_price">¥319</li>
+                                </ul>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="goodslist_all_cr">
+                        <div class="goodslist_all_crt">
+                            <div class="goodslist_rank">
+                                <ul>
+                                    <li>排序</li>
+                                    <li>综合排序</li>
+                                    <li>价格</li>
+                                </ul>
+                            </div>
+                            <div class="goodslist_show clearfix">
+                                <!-- <ul class="goods_ul">
+                                    
+                                </ul> -->
+                            </div>
+                        </div>
+                        <div class="goodslist_all_crpage"></div>
+                    </div>    
+                </div>
+                <!-- 历史记录 -->
+                <div class="goodslist_all_b">
+                    <div class="goodslist_all_bt">
+                        您最近还浏览以下商品：
+                    </div>
+                    <div class="goodslist_all_bb">
+                        
                     </div>
                 </div>
             </div>
         </main>
         <footer id="pageFooter"></footer>
+        <div id="right_fixed"></div>
+        <script src="../js/goodslist.js"></script>
     </body>
 </html>
