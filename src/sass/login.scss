@@ -7,6 +7,8 @@
             .username_box{margin-top: 50px;
                 input{border-radius: 10px;outline: 0;line-height: 40px;height: 40px;border: 1px solid #D0D0D0;background: #fff;text-indent: 4em;width: 100%;}
                 .error{height: 30px;}
+                .success{height: 30px;color:#58bc58;font-size: 14px;}
+                .wrong{height: 30px;color:red;font-size: 14px;}
             }
             .password_box{
                 input{border-radius: 10px;outline: 0;line-height: 40px;height: 40px;border: 1px solid #D0D0D0;background: #fff;text-indent: 4em;width: 100%;}

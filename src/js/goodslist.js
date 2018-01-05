@@ -1,12 +1,14 @@
 (function($){
     $(function(){
+    // document.addEventListener("DOMContentLoaded",function(){
+        // console.log(666);
         var goodslist_show = document.querySelector('.goodslist_show');
         // var goods_ul = document.querySelector('.goods_ul');
         var page = document.querySelector('.goodslist_all_crpage');
         // 每页30个
         var pageNo = 1;
         var qty = 28;
-
+        // console.log(666);
         var status = [200,304];
         // 请求
         var goods_xhr = new XMLHttpRequest();
@@ -17,8 +19,10 @@
                 // console.log(res);
                 var ul = document.createElement('ul');
                 ul.innerHTML = res.data.map(function(item){
-                    return `<li data-id="${item.id}">
-                                <div class="p1"><img src="${item.img}"></div>
+                    // console.log(item.img[0]);
+
+                    return `<li class="goodsli" data-id="${item.id}">
+                                <div class="p1"><img src="${item.img[0]}"></div>
                                 <div class="p2">${item.price}</div>
                                 <div class="p3"><a href="#">${item.describe}</a></div>
                             </li>`
@@ -37,6 +41,11 @@
                     }
                     page.appendChild(span);
                 }
+                // 点击商品跳转详情页
+                $('.goodslist_show').on('click','.goodsli',function(){
+                    var id = $(this).attr('data-id');
+                    location.href = "../html/detail.html?id="+id;
+                })
 
             }
         };
@@ -59,5 +68,6 @@
             }
 
         }
+        
     })
 })(jQuery)

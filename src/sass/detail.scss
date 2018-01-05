@@ -1,0 +1,52 @@
+.container{width: 100%;
+    .detail_goods{margin: 0 auto;overflow: hidden;width: 1198px;border: 1px solid #e6e6e6;padding: 36px 0px;
+        .goodsImg{float: left;width: 480px;position: relative;z-index: 10;
+            .goodsImg_more{float: left;width: 80px;height: 400px;position: relative;overflow: hidden;background:yellow;}
+
+            .smallList img{width:80px;}
+            .gds-zoom-big img{min-width: 1000px;}
+            .goodsImg_big{float: left;width: 400px;height: 400px;text-align: center;vertical-align: middle;position: relative;background: red;}
+            .goodsImg_promise{width: 480px;height: 25px;line-height: 25px;margin-top: 15px;float: left;
+                ul{margin-left: 30px;
+                    li{float: left;color: #666;width: 80px;position: relative;padding-left: 30px;font-size: 14px;
+                        .iconfont4{width: 23px;height: 23px;position: absolute;top: 2px;left: 0px;background-position: -469px -734px;}
+                        a{color: #666;}
+                    }
+                }
+            }
+        }
+        .goods_des{float: left;width: 500px;margin-left: 10px;
+            .goods_des_til{font-size: 14px;line-height: 25px;overflow: hidden;color: #666;margin-left:10px;}
+            .goods_des_red{height: 25px;line-height: 25px;color: #ff3344;overflow: hidden;padding-left: 10px;font-size: 14px;}
+            .goods_des_price{width: 480px;background: #f7f7f7;margin-top: 10px;padding: 10px 10px;height: 30px;
+                span{color: #333;line-height: 30px;font-size: 14px;}
+                .goods_des_p{font-size: 22px;font-weight: bold;color: #c81417;}
+            }
+            .goods_des_sel{margin-top: 5px;
+                .sel_color,.sel_number{overflow: hidden;margin-top: 10px;
+                    li{float: left;}
+                    .sel_attr1{width: auto;min-width: 60px;color: #666;margin-left: 10px;line-height: 38px;font-size: 14px;}
+                    .sel_attr2{display: inline-block;float: left;height: 25px;line-height: 25px;padding: 0px 5px;border: 1px solid #ccc;cursor: pointer;margin-right: 5px;margin-top: 5px;position: relative;font-size: 14px;}
+                }
+            }
+            .goods_des_add{margin-top: 15px;overflow: hidden;
+                li{float: left;}
+                .font{width: auto;min-width: 60px;line-height: 40px;font-size: 14px;color:#666;margin-left:10px;}
+                .add_goodsnum{width: 65px;
+                    #buyNum{float: left;width: 28px;height: 39px;text-align: center;line-height: 38px;border: 1px solid #ccc;}
+                    .add_btn{float: left;
+                        a{width: 24px;height: 19px;display: block;border: 1px solid #ccc;text-align: center;line-height: 19px;color: #333;border-left: none;}
+                    }
+                }
+                .add_tocar{
+                    .tocarBtn{width: 140px;height: 40px;display: block;color: #fff;background: #ff3344;text-align: center;line-height: 40px;font-weight: bold;margin-left: 10px;}
+                }
+            }
+            .goods_des_serve{height: 100%;border-top: 1px dashed #e6e6e6;margin-top: 20px;color: #999;font-size: 12px;display: block;text-align: left;padding-top: 20px;
+                ul{margin-left:10px;}
+                span{margin-right: 15px;}
+            }
+        }
+    
+    }
+}
