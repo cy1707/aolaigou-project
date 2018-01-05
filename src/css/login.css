@@ -18,6 +18,10 @@
 
 .login_mr .login_mrb form .password_box .error { height: 30px; }
 
+.login_mr .login_mrb form .password_box .success { height: 30px; color: #58bc58; font-size: 14px; }
+
+.login_mr .login_mrb form .password_box .wrong { height: 30px; color: red; font-size: 14px; }
+
 .login_mr .login_mrb form .rember_pw .keep_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; }
 
 .login_mr .login_mrb form .rember_pw .keep_pw label { margin-left: 10px; vertical-align: middle; color: #a7a7a7; font-size: 12px; }

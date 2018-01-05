@@ -7,9 +7,17 @@
 
     $content = fread($file,filesize($path));
 
-    $data = json_decode($content);
+    $data = json_decode($content,true);
     // 把新注册的用户名和密码写入json里面
-    array_push($data,"'username':$username,'password':$password");
-    var_dump($data);
+    $data[] = array("username"=>$username,"password"=>$password);
+    // var_dump($data);
+    fclose($file);
+    // var_dump($data);
+
+    $file = fopen($path,'w');
+    fwrite($file,json_encode($data,JSON_UNESCAPED_UNICODE));
+    fclose($file);
+
+    echo json_encode($data,JSON_UNESCAPED_UNICODE);
 
 ?>
