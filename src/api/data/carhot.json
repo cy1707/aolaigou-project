@@ -1,0 +1,63 @@
+[
+    {
+        "id":"01",
+        "price":"￥158",
+        "imgurl":"../img/carhot1.jpg",
+        "describe":"花王妙而舒  婴儿纸尿裤（L） 54片"
+    },{
+        "id":"02",
+        "price":"￥145",
+        "imgurl":"../img/carhot2.jpg",
+        "describe":"美迪惠尔  水库补水保湿毛孔修复面膜10片/盒（2盒装）"
+    },{
+        "id":"03",
+        "price":"￥128",
+        "imgurl":"../img/carhot3.jpg",
+        "describe":"贝德玛  法国Bioderma 舒妍温和保湿卸妆水500ml 粉水（国际版和法国版随机发）"
+    },{
+        "id":"04",
+        "price":"￥169",
+        "imgurl":"../img/carhot4.jpg",
+        "describe":"兰芝  雪纱丝柔防晒隔离霜30ml（#40紫色） 免税店版"
+    },{
+        "id":"05",
+        "price":"￥218",
+        "imgurl":"../img/carhot5.jpg",
+        "describe":"美素佳儿  金装幼儿3段成长配方奶粉 900g"
+    },{
+        "id":"06",
+        "price":"￥209",
+        "imgurl":"../img/carhot6.jpg",
+        "describe":"美迪惠尔  水库补水保湿城野医生  日本LaboLabo毛孔收缩水 控油清洁化妆水"
+    },{
+        "id":"07",
+        "price":"￥699",
+        "imgurl":"../img/carhot7.jpg",
+        "describe":"耐克NIKE  2017新款 Air Force AF1空军一号男纯白运动休闲板鞋 845052-100"
+    },{
+        "id":"08",
+        "price":"￥419",
+        "imgurl":"../img/carhot8.jpg",
+        "describe":"adidas阿迪达斯  2017新款 男鞋网面缓震轻便透气运动耐磨黑武士跑步鞋BA8166"
+    },{
+        "id":"09",
+        "price":"￥429",
+        "imgurl":"../img/carhot9.jpg",
+        "describe":"adidas阿迪达斯  2017新款 男鞋网面透气舒适耐磨缓震跑步鞋BB3563"
+    },{
+        "id":"10",
+        "price":"￥449",
+        "imgurl":"../img/carhot10.jpg",
+        "describe":"adidas阿迪达斯  2017新款 NEO男鞋低帮轻便耐磨减震舒适运动休闲跑步鞋AH2415"
+    },{
+        "id":"11",
+        "price":"￥429",
+        "imgurl":"../img/carhot11.jpg",
+        "describe":"adidas阿迪达斯  2017新款 男鞋网面透气舒适耐磨缓震跑步鞋BB3563"
+    },{
+        "id":"12",
+        "price":"￥609",
+        "imgurl":"../img/carhot12.jpg",
+        "describe":"adidas阿迪达斯  2017新款 三叶草女鞋舒适轻便透气贝壳头一脚蹬低帮休闲鞋BY2884"
+    }
+]

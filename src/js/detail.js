@@ -19,13 +19,28 @@ document.addEventListener("DOMContentLoaded",function(){
             var data = JSON.parse(xhr.responseText);
             // 拿到data对应的id的对象data[id];
             var currentgoods = data[id-1];
-            console.log(currentgoods);
+            // console.log(currentgoods);
             // 把对应商品信息写入页面
-            currentImg.src = currentgoods.img;
-            currentImg.setAttribute('data-big',currentgoods.img);
+            currentImg.src = currentgoods.img[0];
+            document.querySelector('.goods_small1').src = currentgoods.img[0];
+            document.querySelector('.goods_small2').src = currentgoods.img[1];
+            document.querySelector('.goods_small3').src = currentgoods.img[2];
+            document.querySelector('.goods_small4').src = currentgoods.img[3];
+            document.querySelector('.goods_small5').src = currentgoods.img[4];
+
+            currentImg.setAttribute('data-big',currentgoods.img[0]);
+            console.log(currentgoods.img[0]);
             // console.log(currentImg.getAttribute('data-big'));
             goods_des_p.innerHTML = currentgoods.price;
             goods_des_til.innerHTML = currentgoods.describe;
+
+            // 切换图片
+            $('.goodsImg_more').on('click','li',function(){
+                $('.goodsImg_more').find('li').css({border:'1px solid #ccc'})
+                $(this).css({border:'1px solid red'});
+                currentImg.src = $(this).find('img').attr('src');
+                // console.log($(this).find('img').attr('src'));
+            })
             // 放大镜效果
             // 给放大镜图片的路径
             $('.goodsImg_big').gdsZoom();
@@ -35,6 +50,12 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     xhr.open('get','../api/data/goodslist.json',true);
     xhr.send();
+    $('#right_fixed').on('mouseenter','li',function(){
+        $(this).find('.wenzi').animate({right:48});
+       
+    }).on('mouseleave','li',function(){
+        $(this).find('.wenzi').stop(true).animate({right:0});
+    })
     // 勾选颜色
     // 保存当前选中的颜色
     var currentColor;
@@ -121,6 +142,14 @@ document.addEventListener("DOMContentLoaded",function(){
             $copyImg.remove();
         });
     });
+    // 点击切换
+    $('.goods_del_bt').on('click','span',function(){
+        var span = document.querySelector('.goods_del_bt').querySelectorAll('span');
+        for(var i=0;i<span.length;i++){
+            span[i].className = '';
+        }
+        $(this).addClass('selected');
+        
+    })
     
 })
-

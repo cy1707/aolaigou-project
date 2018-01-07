@@ -23,6 +23,8 @@
             }
         </style>
         <script src="../lib/jquery-3.2.1.js"></script>
+        <!-- <script src="../js/fixed.js"></script> -->
+
         <script src="../lib/jquery-gdsZoom/jquery.gdsZoom.js"></script>
         <script type="text/javascript">
         $(function(){
@@ -37,10 +39,17 @@
         <div class="container" style="width:100%">
             <div class="detail_goods">
                 <div class="goodsImg">
-                    <div class="goodsImg_more"></div>
+                    <div class="goodsImg_more">
+                        <ul>
+                            <li><img src="" alt="" class="goods_small1"/></li>
+                            <li><img src="" alt=""  class="goods_small2"/></li>
+                            <li><img src="" alt=""  class="goods_small3"/></li>
+                            <li><img src="" alt=""  class="goods_small4"/></li>
+                            <li><img src="" alt=""  class="goods_small5"/></li>
+                        </ul>
+                    </div>
                     <div class="goodsImg_big">
                         <img src="" class="currentImg" style="width:400px;height: 400px;" data-big=""/>
-                        
                     </div>
                     <div class="goodsImg_promise clearfix">
                         <ul class="clearfix">
@@ -116,8 +125,165 @@
                         </ul>
                     </div>
                 </div>
-            </div>            
+                <div class="recommend_foryou">
+                    <div class="recommend_t">
+                        <div class="line"></div>
+                        <span>为你推荐
+                            <div class="arrow arrow-left">
+                                <img src="../img/arrow-top.jpg" alt="" />
+                            </div>
+                            <div class="arrow arrow-right">
+                                <img src="../img/arrow-bottom.jpg" alt="" />
+                            </div>
+
+                        </span>
+                    </div>
+                    <div class="recommend_b">
+                        <ul id="recommendgoods">
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed1.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥239</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed2.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥189</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed3.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥209</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed4.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥119</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed5.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥309</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed6.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥199</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed7.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥210</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed8.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥399</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="rt-val1">
+                                    <img src="../img/recommed9.jpg" alt="" />   
+                                </div>
+                                <div class="rt-val3">
+                                    <span class="price">￥110</span>
+                                    <span class="discount">折扣</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+            <div class="nothing"></div>
+            <div class="goods_detail_bottom">
+                <div class="goods_detail_bl">
+                    <div class="goods_detail_blt">
+                        热门销售
+                        <em>Hot</em>
+                    </div>
+                    <div class="goods_detail_blb">
+                        <ul>
+                            <li><img src="../img/goods_blb1.jpg" alt="" /></li>
+                            <li class="left-conli-txt"><a href="">羽绒服2017冬季中长款连帽防风保暖运动羽绒外套男 807394</a></li>
+                            <li class="left-conli-val">¥1099.00</li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/goods_blb2.jpg" alt="" /></li>
+                            <li class="left-conli-txt"><a href="">PUMA 男子羽绒服外套 594590</a></li>
+                            <li class="left-conli-val">¥799.00</li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/goods_blb3.jpg" alt="" /></li>
+                            <li class="left-conli-txt"><a href="">男式抓绒服</a></li>
+                            <li class="left-conli-val">¥215.00</li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/goods_blb4.jpg" alt="" /></li>
+                            <li class="left-conli-txt"><a href="">男子运动上衣时尚潮流羽绒服新款保暖男款厚外套984429190537</a></li>
+                            <li class="left-conli-val">¥255.00</li>
+                        </ul>
+                        <ul>
+                            <li><img src="../img/goods_blb5.jpg" alt="" /></li>
+                            <li class="left-conli-txt"><a href="">时尚羽绒服 26450025</a></li>
+                            <li class="left-conli-val">¥299.00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="goods_detail_br">
+                    <div class="goods_detail_b">
+                        <div class="goods_del_bt clearfix">
+                            <span class="selected">商品介绍</span>
+                            <span>售后服务</span>
+
+                        </div>
+                        <div class="goods_del_img">
+                            <img src="../img/goods_del_img1.jpg" alt="" />
+                            <img src="../img/goods_del_img2.jpg" alt="" />
+                            <img src="../img/goods_del_img3.jpg" alt="" />
+                            <img src="../img/goods_del_img4.jpg" alt="" />
+                            <img src="../img/goods_del_img5.jpg" alt="" />
+                            <img src="../img/goods_del_img6.jpg" alt="" />
+                            <img src="../img/goods_del_img7.jpg" alt="" />
+                            <img src="../img/goods_del_img8.jpg" alt="" />
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+                  
         </div>
+        <div class="nothing"></div>
         <footer id="pageFooter"></footer>
         <div id="right_fixed"></div>
         <script src="../js/detail.js"></script>

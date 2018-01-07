@@ -2,7 +2,60 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/base.css" />
+        <link rel="stylesheet" href="../css/carlist.css" />
+        <style type="text/css">
+            @font-face {font-family: "detail-font";
+              src: url('../css/detail-font/iconfont.eot?t=1515152703521'); /* IE9*/
+              src: url('../css/detail-font/iconfont.eot?t=1515152703521#iefix') format('embedded-opentype'), /* IE6-IE8 */
+              url('../css/detail-font/data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+              url('../css/detail-font/iconfont.ttf?t=1515152703521') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+              url('../css/detail-font/iconfont.svg?t=1515152703521#iconfont') format('svg'); /* iOS 4.1- */
+            }
+
+            .iconfont4 {
+              font-family:"detail-font" !important;
+              font-size:16px;
+              font-style:normal;
+              -webkit-font-smoothing: antialiased;
+              -moz-osx-font-smoothing: grayscale;
+            }
+        </style>
+        <script src="../lib/jquery-3.2.1.js"></script>
+        <script type="text/javascript">
+        $(function(){
+            $('#pageHeader').load('header.html')
+            $('#pageFooter').load('footer.html')
+            $('#right_fixed').load('fixed.html')
+        })
+        </script>
     </head>
     <body>
+        <header id="pageHeader"></header>
+        <div class="nothing"></div>
+        <div class="container" style="width:1200px;">
+            <!-- 购物商品详情 -->
+            <div class="carlist_del">
+                
+                
+            </div>
+            <div class="nothing"></div>
+            <!-- 推荐 -->
+            <div class="car_hot">
+                <div class="car_hot_t">
+                    <span>热门推荐</span>
+                </div>
+                <div class="car_hot_b">
+                    <ul class="car_hot_list clearfix">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="nothing" style="height:30px;"></div>
+        
+        <footer id="pageFooter"></footer>
+        <div id="right_fixed"></div>
+        <script src="../js/carlist.js"></script>
     </body>
 </html>

@@ -55,6 +55,12 @@
 
         goods_xhr.send(`pageNo=${pageNo}&qty=${qty}`);
 
+        $('#right_fixed').on('mouseenter','li',function(){
+            $(this).find('.wenzi').animate({right:48});
+           
+        }).on('mouseleave','li',function(){
+            $(this).find('.wenzi').stop(true).animate({right:0});
+        })
         // 点击分页切换
         page.onclick = function(e){
             // console.log(e.target.tagName.toLowerCase());

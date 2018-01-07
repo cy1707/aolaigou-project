@@ -4,35 +4,33 @@
 
 .login_mr .register-btn a { color: #FF7800; }
 
-.login_mr .login_mrb { position: relative; }
+.login_mr .login_mrb { position: relative; width: 240px; margin: auto; display: block; }
 
-.login_mr .login_mrb form { width: 240px; margin: auto; display: block; }
+.login_mr .login_mrb .username_box { margin-top: 50px; }
 
-.login_mr .login_mrb form .username_box { margin-top: 50px; }
+.login_mr .login_mrb .username_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
 
-.login_mr .login_mrb form .username_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
+.login_mr .login_mrb .username_box .error { height: 30px; }
 
-.login_mr .login_mrb form .username_box .error { height: 30px; }
+.login_mr .login_mrb .username_box .success { height: 30px; color: #58bc58; font-size: 14px; }
 
-.login_mr .login_mrb form .username_box .success { height: 30px; color: #58bc58; font-size: 14px; }
+.login_mr .login_mrb .username_box .wrong { height: 30px; color: red; font-size: 14px; }
 
-.login_mr .login_mrb form .username_box .wrong { height: 30px; color: red; font-size: 14px; }
+.login_mr .login_mrb .password_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
 
-.login_mr .login_mrb form .password_box input { border-radius: 10px; outline: 0; line-height: 40px; height: 40px; border: 1px solid #D0D0D0; background: #fff; text-indent: 4em; width: 100%; }
+.login_mr .login_mrb .password_box .error { height: 30px; }
 
-.login_mr .login_mrb form .password_box .error { height: 30px; }
+.login_mr .login_mrb .password_box .success { height: 30px; color: #58bc58; font-size: 14px; line-height: 30px; }
 
-.login_mr .login_mrb form .password_box .success { height: 30px; color: #58bc58; font-size: 14px; }
+.login_mr .login_mrb .password_box .wrong { height: 30px; color: red; font-size: 14px; line-height: 30px; }
 
-.login_mr .login_mrb form .password_box .wrong { height: 30px; color: red; font-size: 14px; }
+.login_mr .login_mrb .rember_pw .keep_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; }
 
-.login_mr .login_mrb form .rember_pw .keep_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; }
+.login_mr .login_mrb .rember_pw .keep_pw label { margin-left: 10px; vertical-align: middle; color: #a7a7a7; font-size: 12px; }
 
-.login_mr .login_mrb form .rember_pw .keep_pw label { margin-left: 10px; vertical-align: middle; color: #a7a7a7; font-size: 12px; }
+.login_mr .login_mrb .rember_pw .forget_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; font-size: 12px; text-align: right; }
 
-.login_mr .login_mrb form .rember_pw .forget_pw { line-height: 40px; height: 40px; float: left; display: inline-block; width: 49.9%; color: #a7a7a7; font-size: 12px; text-align: right; }
-
-.login_mr .login_mrb form .loginBtn { margin-top: 20px; width: 100%; padding: 14px 0; background: #C81417; color: #FFF; border-radius: 5px; text-align: center; display: block; border: none; cursor: pointer; }
+.login_mr .login_mrb .loginBtn { margin-top: 20px; width: 100%; padding: 14px 0; background: #C81417; color: #FFF; border-radius: 5px; text-align: center; display: block; border: none; cursor: pointer; }
 
 .login_mr .login_mrb .reg_free { text-align: center; margin-top: 20px; color: #a7a7a7; font-size: 14px; }
 
