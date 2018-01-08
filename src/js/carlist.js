@@ -145,13 +145,33 @@ document.addEventListener("DOMContentLoaded", function(){
         document.cookie = 'carlist='+ JSON.stringify(data);
         
         this.parentElement.parentElement.remove();
-        
-        // console.log(this.parentElement.parentElement);
+        // 重新计算选中商品总价
+        var currentcheck = this.parentElement.parentElement.querySelector('#add_value');
+        var currentshangpinjg = this.parentElement.parentElement.querySelector('.shangpinjg');
+        var strjg = currentshangpinjg.innerHTML;
+        strjg = strjg.split('￥');
+        strjg = strjg[1];//=>对应价格
+        // console.log(strjg);
+        if(currentcheck.checked){
+            console.log(currentcheck.checked);
+            var tll = emTol.innerHTML;
+            tll = tll.split('￥');
+            tll = tll[1];
+            var sum = tll*1 - strjg*1;
+            console.log(sum);
+            emTol.innerHTML = '￥'+ sum;
+            console.log(emTol.innerHTML);
+            return;
+        }
+        console.log(currentcheck.checked+"后面");
+
 
     })
     // 清空购物车
     $('.removeBtn').on('click',function(){
         // 在cookit中删除
+        // 总价设为0
+        
         emTol.innerHTML = '￥0.00';
         var now = new Date();
         now.setDate(now.getDate()-1000);
@@ -160,11 +180,7 @@ document.addEventListener("DOMContentLoaded", function(){
         var trs = document.querySelectorAll('.carlist_addlist tr');
         for(var i=0;i<trs.length;i++){
             trs[i].remove();
-        }
-
-        // 总价设为0
-        
-        
+        } 
     })
     var $carlist_addlist = $('.carlist_addlist');
     var $trs = $carlist_addlist.find('tr');  
@@ -187,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 currentshangpinjg=currentshangpinjg.slice(1)*1;
                 tol += currentshangpinjg;
 
-                console.log(tol);
+                // console.log(tol);
                 emTol.innerHTML = '￥'+tol;
             }
         }
@@ -217,7 +233,7 @@ document.addEventListener("DOMContentLoaded", function(){
                 currentshangpinjg=currentshangpinjg.slice(1)*1;
                 tol += currentshangpinjg;
 
-                console.log(tol);
+                // console.log(tol);
                 emTol.innerHTML = '￥'+tol;
             }else if($("#add_value").is(':checked') == false){
                 // emTol.innerHTML = '￥'+tol;
