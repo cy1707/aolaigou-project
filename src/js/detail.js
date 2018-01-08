@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded",function(){
             document.querySelector('.goods_small5').src = currentgoods.img[4];
 
             currentImg.setAttribute('data-big',currentgoods.img[0]);
-            console.log(currentgoods.img[0]);
+            // console.log(currentgoods.img[0]);
             // console.log(currentImg.getAttribute('data-big'));
             goods_des_p.innerHTML = currentgoods.price;
             goods_des_til.innerHTML = currentgoods.describe;
@@ -44,6 +44,12 @@ document.addEventListener("DOMContentLoaded",function(){
             // 放大镜效果
             // 给放大镜图片的路径
             $('.goodsImg_big').gdsZoom();
+            $('.smallList img').click(function(){
+                $('.goodsImg_big img').attr({
+                    'src':this.src,
+                    'data-big':$(this).attr('data-big') || this.src
+                });
+            })
         }
         
 
@@ -55,7 +61,26 @@ document.addEventListener("DOMContentLoaded",function(){
        
     }).on('mouseleave','li',function(){
         $(this).find('.wenzi').stop(true).animate({right:0});
-    })
+    }).on('click','.totop',function(){
+            let timer = setInterval(()=>{
+                // 获取当前滚动果的距离：5000,100
+                let scrollY = window.scrollY;
+                // console.log(scrollY);
+                // 计算速度
+                let speed = scrollY/10;//500,10
+
+                scrollY -= speed;
+                // 清除定时器
+                // 当速度为0
+                // 当scrollY等于0
+                if(speed <= 0 || scrollY === 0){
+                    clearInterval(timer);
+                }
+
+                scrollTo(0,scrollY);
+
+            },30);
+        })
     // 勾选颜色
     // 保存当前选中的颜色
     var currentColor;
@@ -118,10 +143,14 @@ document.addEventListener("DOMContentLoaded",function(){
         }
         // console.log($('#buyNum').get(0).value)
     });
+    // 用于保存购物车的商品
+    
+    var carlist = [];
     // 点击加到购物车
     $('.tocarBtn').on('click',function(){
+        var buynum = $('#buyNum').val();
         // 获取当前选择的颜色，尺码大小，数量
-        console.log(currentColor,currentSize,$('#buyNum').val());
+        // console.log(currentColor,currentSize,$('#buyNum').val());
         // 点击商品飞入购物车
         var $img = $('.currentImg');
         var $copyImg = $img.clone();
@@ -141,6 +170,79 @@ document.addEventListener("DOMContentLoaded",function(){
             
             $copyImg.remove();
         });
+        // 点击加入购物车商品存入cookie
+        // 点击添加购物车同时把商品数据存入数据库
+        
+        var status = [200,304];
+        var goods_xhr = new XMLHttpRequest();
+        goods_xhr.onreadystatechange = ()=>{
+        if(status.includes(goods_xhr.status) && goods_xhr.readyState === 4){
+            var data = JSON.parse(goods_xhr.responseText);
+            // 拿到data对应的id的商品数据data[id];
+            // console.log(carlist.length);
+            // console.log(goods);
+            // 判断是否存在相同商品
+            var carlist= cookie.get("carlist");
+            if(carlist){
+                carlist=JSON.parse(carlist);
+                // console.log(carlist);
+            }else{
+                carlist = [];
+            }
+            
+            for(var i=0;i<carlist.length;i++){
+                    // console.log(carlist[i].guid*1,id*1);
+                    if(carlist[i].guid*1 == id*1){
+                        break;
+                    }
+                }
+                     // 不存在商品
+                if(i=== carlist.length){
+                    var goods = {
+                        guid:data[id-1].id,
+                        imgurl:data[id-1].img[0],
+                        price:data[id-1].price,
+                        describe:data[id-1].describe,
+                        color:currentColor,
+                        size:currentSize,
+                        qty:buynum
+                    };
+                    carlist.push(goods);
+                }else{
+                    // console.log(buynum);
+                    carlist[i].qty =  carlist[i].qty*1 + buynum*1;
+                }
+                
+                document.cookie = 'carlist='+JSON.stringify(carlist);
+
+
+            // $.ajax({
+            //     url:'../api/carlist.php',
+            //     data:{
+            //         guid:data[id-1].id,
+            //         imgurl:data[id-1].img[0],
+            //         price:data[id-1].price,
+            //         describe:data[id-1].describe,
+            //         color:currentColor,
+            //         size:currentSize,
+            //         qty:buynum
+            //     },
+            //     success:function(){
+            //         console.log(666);
+            //     }
+                
+
+            // });
+
+        }
+        
+
+    }
+    goods_xhr.open('get','../api/data/goodslist.json',true);
+    goods_xhr.send();
+
+
+
     });
     // 点击切换
     $('.goods_del_bt').on('click','span',function(){

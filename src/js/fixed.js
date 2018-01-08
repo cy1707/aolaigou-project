@@ -4,6 +4,11 @@ document.addEventListener('DOMContentLoaded',function(){
        
     }).on('mouseleave','li',function(){
         $(this).find('.wenzi').stop(true).animate({right:0});
+    }).on('click','li',function(){
+        if($(this).find('.wenzi').text() === '购物车'){
+            
+        }
+        // console.log($(this).find('.wenzi').text())
     })
     var totop = document.querySelector('.totop');
     // 返回顶部
@@ -28,5 +33,7 @@ document.addEventListener('DOMContentLoaded',function(){
 
         },30);
     }
+    // 点击跳转到购物车页面
+    
     
 })

@@ -4,7 +4,7 @@
 		var defaults = {
 			// 宽高
 			width:400,
-			height:300,
+			height:400,
 
 			// 大图显示位置
 			position:'right',//bottom,top,left,
@@ -27,11 +27,12 @@
 
 			// 生成大图容器
 			var $big = $('<div/>').addClass('gds-zoom-big');
-
+			// console.log($small.offset().top);
 			// 定位大图容器
 			var left,top;
 			if(opt.position === 'right'){
-				top = $small.offset().top;
+				top = 225;
+				console.log(top);
 				left = $small.offset().left + $smallImg.outerWidth() + opt.gap;
 			}else if(opt.position === 'left'){
 				top = $small.offset().top;

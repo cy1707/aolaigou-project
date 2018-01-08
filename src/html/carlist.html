@@ -26,7 +26,7 @@
         $(function(){
             $('#pageHeader').load('header.html')
             $('#pageFooter').load('footer.html')
-            $('#right_fixed').load('fixed.html')
+            // $('#right_fixed').load('fixed.html')
         })
         </script>
     </head>
@@ -34,10 +34,42 @@
         <header id="pageHeader"></header>
         <div class="nothing"></div>
         <div class="container" style="width:1200px;">
+
             <!-- 购物商品详情 -->
-            <div class="carlist_del">
-                
-                
+            <div class="carlist_til">
+                商品详情
+            </div>
+            <div class="carlist_del clearfix">
+                <table class="carlist_table clearfix">
+                    <thead>
+                        <tr class="carlist_fiel">
+                            <th style="width:60;">全选</th>
+                            <th style="width:540;">订单商品</th>
+                            <th style="width:120;">单价</th>
+                            <th style="width:120;">数量</th>
+                            <th style="width:120;">优惠</th>
+                            <th style="width:120;">小计</th>
+                            <th style="width:120;">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody  class="carlist_addlist">
+                        
+                    </tbody>
+                </table>
+                <div class="car-wind">
+                    <div class="fl carwinda">
+                        <ul>
+                            <li><input type="checkbox" id="footerCheckAll"/></li>
+                            <li><a href="javascript:void(0);">全选</a></li>
+                            <li><a href="javascript:void(0);" class="removeBtn">删除</a></li>
+                            <li><a href="javascript:void(0);">移入收藏夹</a></li>
+                        </ul>
+                    </div>
+                    <div class="carwindc fr">
+                        <div class="carwindc-1 fl">总计：<em>￥0.00</em></div>
+                        <button class="jiesuan fl">去结算</button>
+                    </div>
+                </div>
             </div>
             <div class="nothing"></div>
             <!-- 推荐 -->
@@ -55,7 +87,7 @@
         <div class="nothing" style="height:30px;"></div>
         
         <footer id="pageFooter"></footer>
-        <div id="right_fixed"></div>
+        <!-- <div id="right_fixed"></div> -->
         <script src="../js/carlist.js"></script>
     </body>
 </html>
